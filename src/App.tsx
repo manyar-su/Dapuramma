@@ -6,7 +6,6 @@ import CTASection from './components/CTASection';
 import CustomBuilder from './components/CustomBuilder';
 import DeliverySection from './components/DeliverySection';
 import FavoriteMenu from './components/FavoriteMenu';
-import FeaturesSection from './components/FeaturesSection';
 import Footer from './components/Footer';
 import GallerySection from './components/GallerySection';
 import Hero from './components/Hero';
@@ -132,7 +131,6 @@ export default function App() {
                 if (element) element.scrollIntoView({ behavior: 'smooth' });
               }}
             />
-            <FeaturesSection />
             <FavoriteMenu onOrder={handlePickMenu} />
             <div ref={orderRef} className="scroll-mt-20">
               <CustomBuilder initialMenu={selectedMenu} onOrderSuccess={handleOrderSuccess} />
