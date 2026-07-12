@@ -1,13 +1,14 @@
 export interface Menu {
   id: string;
   slug: string;
+  category: string;
   name: string;
   description: string;
   price: number;
   image: string;
   isBestSeller?: boolean;
   sizes: {
-    name: 'Regular' | 'Medium' | 'Large' | 'Family Box';
+    name: string;
     priceAdjustment: number;
   }[];
   defaultToppings?: string[];
@@ -36,12 +37,12 @@ export interface GalleryItem {
 
 export interface OrderState {
   menu: Menu;
-  size: 'Regular' | 'Medium' | 'Large' | 'Family Box';
-  sauce: 'Cheese Original' | 'Spicy Cheese' | 'BBQ Cheese' | 'Mix Sauce';
+  size: string;
+  sauce: string;
   selectedToppings: Topping[];
-  spicyLevel: 'Tidak pedas' | 'Sedang' | 'Pedas' | 'Extra pedas';
+  spicyLevel: string;
   quantity: number;
-  deliveryMethod: 'Ambil di tempat' | 'Kirim ke alamat';
+  deliveryMethod: string;
   address: string;
   notes: string;
 }

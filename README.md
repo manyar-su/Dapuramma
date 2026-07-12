@@ -1,60 +1,37 @@
-# Potato Cheese Pangalengan
+# Dapur Ama Snack
 
-Website promosi dan pemesanan untuk `Potato Cheese Pangalengan`, jajanan kentang krispi dengan saus keju creamy dan custom topping di area Terminal Pangalengan, Kabupaten Bandung.
+Website katalog dan pemesanan untuk `Dapur Ama Snack` di Terminal Pangalengan.
 
-## Ringkasan Web
+## Fokus Web
 
-Web ini dirancang sebagai landing page kuliner yang fokus pada konversi pemesanan. Pengunjung dapat melihat menu unggulan, memilih topping tambahan, membaca ulasan, mengecek lokasi outlet, lalu meneruskan pesanan ke WhatsApp.
+Web ini sekarang diarahkan untuk menampilkan menu sesuai materi promosi Dapur Ama Snack, dengan kategori utama:
 
-Fitur utama:
+- `Ubi Creme`
+- `Snack`
+- `Cilung`
+- `Risol`
+- `Potachiz`
 
-- Hero section dan CTA pemesanan langsung
-- Katalog menu favorit dan best seller
-- Custom builder untuk racik topping
-- Informasi pengiriman area Pangalengan
-- Peta lokasi outlet dan kontak WhatsApp
-- FAQ, ulasan pelanggan, dan loyalty/member mockup berbasis `localStorage`
+## Isi Menu yang Sudah Disusun
 
-## Teknologi
+- Varian `D'Potachiz Korean Bread`
+- Varian `Ubi Creme Brulee`
+- Menu `Risol` satuan dan paketan
+- Menu `Snack` harian dari daftar poster
+- Struktur kategori `Cilung` sudah disiapkan di halaman menu
 
-- React 19
-- TypeScript
-- Vite
-- Tailwind CSS v4
-- Lucide React
+## Fitur Halaman
 
-## Menjalankan Secara Lokal
+- Hero dan branding memakai logo Dapur Ama
+- Favicon memakai `logo.png`
+- Halaman menu berbasis kategori
+- Form order yang meneruskan detail pesanan ke WhatsApp admin
+- Lokasi outlet di Terminal Pangalengan
+- Galeri memakai materi gambar menu yang diberikan user
 
-Prasyarat:
+## Menjalankan Lokal
 
-- Node.js 20 atau lebih baru
-
-Langkah:
-
-1. Install dependency:
-   `npm install`
-2. Jalankan mode development:
-   `npm run dev`
-3. Build production:
-   `npm run build`
-4. Validasi TypeScript:
-   `npm run lint`
-
-## Struktur Singkat
-
-- `src/App.tsx`: perakitan halaman utama dan navigasi tab
-- `src/components/`: komponen tampilan tiap section
-- `src/data.ts`: data menu, topping, FAQ, galeri, dan testimoni
-- `src/lib/storage.ts`: simulasi member, poin, riwayat, dan ulasan di `localStorage`
-- `assets/`: aset visual proyek
-
-## Alur Pemesanan
-
-1. Pengunjung membuka halaman beranda.
-2. Pengunjung memilih menu atau langsung membuka custom builder.
-3. Pengunjung menentukan ukuran dan topping.
-4. Web mengarahkan ke WhatsApp dengan format pesanan otomatis.
-
-## Catatan
-
-Repo ini adalah website frontend statis. Tidak ada dependensi ke AI Studio untuk menjalankan atau deploy aplikasi.
+1. `npm install`
+2. `npm run dev`
+3. `npm run build`
+4. `npm run lint`
